@@ -1,0 +1,50 @@
+OBJECTID,Species_Code,Common_Name
+1,ABDU,American Black Duck 
+2,AGWT,Green-winged Teal
+3,AMWI,American Wigeon 
+4,ATBR,Atlantic Brant 
+5,BDMH,Black Duck/Mallard Hybrid 
+6,BLSC,Black Scoter 
+7,BUFF,Bufflehead 
+8,BWTE,Blue-winged Teal
+9,CAGO,Canada Goose 
+10,CANV,Canvasback 
+11,COGO,Common Goldeneye 
+12,COME,Common Merganser 
+13,GADW,Gadwall 
+14,GRSC,Greater Scaup 
+15,GSGO,Greater Snow Goose 
+16,HOME,Hooded Merganser 
+17,KIEI,King Eider 
+18,LADA,Large Dabbling Duck 
+19,LESC,Lesser Scaup 
+20,LSGO,Lesser Snow Goose 
+21,LTDU,Long-tailed Duck
+22,MALL,Mallard 
+23,MUSW,Mute Swan 
+24,UNAY,Unidentified Aythya Spp
+25,NOPI,Northern Pintail 
+26,NOSH,Northern Shoveler 
+27,RBME,Red-breasted Merganser
+28,REDH,Redhead 
+29,RNDU,Ring-necked Duck
+30,RUDU,Ruddy Duck 
+31,SNGO,Snow Goose 
+32,SURV,Survey Placeholder
+33,SUSC,Surf Scoter 
+34,TRUS,Trumpeter Swan 
+35,TUSW,Tundra Swan 
+36,UNDA,Unidentified Dabbling Duck 
+37,UNDI,Unidentified Diving Duck 
+38,UNDU,Unidentified Duck 
+39,UNEI,Unidentified Eider 
+40,UNGO,Unidentified Goose 
+41,UNLD,Unidentified Large Dabbling Duck 
+42,UNME,Unidentified Merganser 
+43,UNSD,Unidentified Small Dabbling Duck 
+44,UNSW,Unidentified Swan 
+45,UNTL,Unidentified Teal 
+46,USCA,Unidentified Scaup Spp 
+47,USCO,Unidentified Scoter 
+48,WODU,Wood Duck 
+49,WWSC,White-winged Scoter
