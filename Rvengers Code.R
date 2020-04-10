@@ -1,6 +1,6 @@
 #**********************************************************************************************************
 #Calling upong survey data
-SurveyInitial = read.csv("C:/Users/Jayan/Desktop/BIOL432/Rvengers/Initial Files/SurveyDataSetInitial.csv")
+SurveyInitial = read.csv("Initial Files/SurveyDataSetInitial.csv")
 
 
 #Will need this package for cleaning up data!
@@ -8,7 +8,7 @@ library("dplyr")
 
 
 #For clarity, codenames will be replaced with Common Names later on. 
-CommonNamesGuide = read.csv("C:/Users/Jayan/Desktop/BIOL432/Rvengers/Initial Files/SpeciesCommonNames.csv")
+CommonNamesGuide = read.csv("Initial Files/SpeciesCommonNames.csv")
 
 #**********************************************************************************************************
 
@@ -287,7 +287,7 @@ write.csv(LakeErieAnnualCounts, file = "LakeErieAnnualCounts.csv")
 
 #Mean T
 
-StLawrenceMeanT = read.csv("C:/Users/Jayan/Desktop/BIOL432/Rvengers/Initial Files/WolfeIslandMeanT.csv")
+StLawrenceMeanT = read.csv("Initial Files/WolfeIslandMeanT.csv")
 
 #Filtered the first two rows since they were irrelevant headers, and filtered out all columns except the 
 #first two, which are the historical modeling values (most relevant for observing trends)
@@ -310,7 +310,7 @@ write.csv(StLawrenceMeanT, file = "StLawrenceMeanT.csv")
 
 #Can now repeat this code for each csv file, ensuring correct variables and correct headers used
 
-LakeErieMeanT = read.csv("C:/Users/Jayan/Desktop/BIOL432/Rvengers/Initial Files/WellandMeanT.csv")
+LakeErieMeanT = read.csv("Initial Files/WellandMeanT.csv")
 
 LakeErieMeanT = LakeErieMeanT[3:nrow(LakeErieMeanT), 1:2]
 
@@ -333,7 +333,7 @@ write.csv(LakeErieMeanT, file = "LakeErieMeanT.csv")
 
 #Tmax > 25 degrees celsius = Summer Days
 
-StLawrenceSummerDays = read.csv("C:/Users/Jayan/Desktop/BIOL432/Rvengers/Initial Files/WolfeIslandSummerDays.csv")
+StLawrenceSummerDays = read.csv("Initial Files/WolfeIslandSummerDays.csv")
 
 StLawrenceSummerDays = StLawrenceSummerDays[3:nrow(StLawrenceSummerDays), 1:2]
 
@@ -347,7 +347,7 @@ write.csv(StLawrenceSummerDays, file = "StLawrenceSummerDays.csv")
 
 
 
-LakeErieSummerDays = read.csv("C:/Users/Jayan/Desktop/BIOL432/Rvengers/Initial Files/WellandSummerDays.csv")
+LakeErieSummerDays = read.csv("Initial Files/WellandSummerDays.csv")
 
 LakeErieSummerDays = LakeErieSummerDays[3:nrow(LakeErieSummerDays), 1:2]
 
@@ -367,7 +367,7 @@ write.csv(LakeErieSummerDays, file = "LakeErieSummerDays.csv")
 
 #Tmin < -15 degrees celsius = Cold Days
 
-StLawrenceColdDays = read.csv("C:/Users/Jayan/Desktop/BIOL432/Rvengers/Initial Files/WolfeIslandColdDays.csv")
+StLawrenceColdDays = read.csv("Initial Files/WolfeIslandColdDays.csv")
 
 StLawrenceColdDays = StLawrenceColdDays[3:nrow(StLawrenceColdDays), 1:2]
 
@@ -381,7 +381,7 @@ write.csv(StLawrenceColdDays, file = "StLawrenceColdDays.csv")
 
 
 
-LakeErieColdDays = read.csv("C:/Users/Jayan/Desktop/BIOL432/Rvengers/Initial Files/WellandColdDays.csv")
+LakeErieColdDays = read.csv("Initial Files/WellandColdDays.csv")
 
 LakeErieColdDays = LakeErieColdDays[3:nrow(LakeErieColdDays), 1:2]
 
@@ -403,7 +403,7 @@ write.csv(LakeErieColdDays, file = "LakeErieColdDays.csv")
 #Could be useful for indicating poor growth conditions for plant life, low abundance of food
 #could signal earlier migration or migration to a different location over time
 
-StLawrenceIceDays = read.csv("C:/Users/Jayan/Desktop/BIOL432/Rvengers/Initial Files/WolfeIslandIceDays.csv")
+StLawrenceIceDays = read.csv("Initial Files/WolfeIslandIceDays.csv")
 
 StLawrenceIceDays = StLawrenceIceDays[3:nrow(StLawrenceIceDays), 1:2]
 
@@ -416,7 +416,7 @@ StLawrenceIceDays = filter(StLawrenceIceDays, Year <= 2004, Year >= 1968)
 write.csv(StLawrenceIceDays, file = "StLawrenceIceDays.csv")
 
 
-LakeErieIceDays = read.csv("C:/Users/Jayan/Desktop/BIOL432/Rvengers/Initial Files/WolfeIslandIceDays.csv")
+LakeErieIceDays = read.csv("Initial Files/WolfeIslandIceDays.csv")
 
 LakeErieIceDays = LakeErieIceDays[3:nrow(LakeErieIceDays), 1:2]
 
