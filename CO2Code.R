@@ -68,13 +68,15 @@ PercentGas = rbind(GHGTotaldat, FossilCO2dat)
 #Then we use this data to make a stacked plot with "fill" set in the position for the bars.
 
 #This will fill the bars based on the conditions specified, in this case we want the bars to be filled
-#as a percentage of GHG.
+#as a percentage of the total GHG CO2.
 
 StackedPlot = ggplot(PercentGas, aes(x = Year, y = Emitted, fill = Emitter)) + 
   geom_bar(position = "fill", stat = "identity") + 
   theme_minimal()+
   ylab("Percent of CO2 Emissions (%)") +
-  ggtitle("Percentage of Fossil Fuel CO2 to Total GHG CO2 1970-2005")
+  ggtitle("Percentage of Fossil Fuel CO2 to Total GHG CO2 1970-2005") +
+  scale_x_continuous(breaks= PercentGas$Year) +
+  theme(axis.text.x = element_text(angle = 90))
 
 png("PercentEmissions.png")
 StackedPlot
